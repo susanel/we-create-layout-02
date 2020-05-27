@@ -1,0 +1,335 @@
+/* FONTS */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Muli', sans-serif; */
+/* font-family: 'Playfair Display', serif; */
+
+/* GENERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 1. NAVIGATION */
+
+nav {
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  margin: 0 40px;
+  color: #000;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* 2. HEADER */
+
+header {
+  position: relative;
+  width: 80%;
+  max-width: 1024px;
+  margin: 0 auto 120px;
+}
+
+header .header-image {
+  position: relative;
+  float: left;
+  width: 48%;  
+  height: 700px;
+  border: 5px solid #B7DBC8;
+  margin: 0 2% 0 0;
+}
+
+header .header-image::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 24%;
+  left: 6%;
+  width: 90%;
+  height: 90%;
+  background-image: url("../img/img-mobile@2x.png");
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+header .header-image::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5%;
+  left: -7%;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/img-top@2x.jpg");
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+}
+
+header .about {
+  float: left;
+  height: 700px;
+  padding-top: 168px;
+  width: 48%;  
+  margin-left: 2%;
+}
+
+header .logo {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+header .slogan {
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+header p {
+  font-family: 'Muli', sans-serif;
+  line-height: 140%;
+  font-size: 18px;
+}
+
+header button {
+  width: 100%;
+  border: none;
+  margin-top: 50px;
+  line-height: 50px;
+  font-family: 'Muli', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: #ACCEB7;
+  color: white;
+  letter-spacing: 2px;
+}
+
+/* 3. SECTION QUOTE*/
+
+.quote {
+  position: relative;
+  height: 300px;
+  margin-bottom: 30px;
+  background-image: url(../img/bg@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quote div.text {
+  position: absolute;
+  right: 10%;
+  bottom: 15%;
+}
+
+.quote p {
+  font-size: 50px;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+/* 4. SECTION EXPERTS */
+
+.experts {
+  width: 70%;
+  margin: 0 auto 17px;
+  max-width: 1024px;
+}
+
+.experts h1 {
+  margin-bottom: 30px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 65px;
+  font-weight: normal;
+}
+
+.experts div.expert-left, .experts div.expert-right {
+  position: relative;
+  float: left;
+  min-height: 240px;
+  width: 48%;
+  border: 5px solid #B7DBC8;
+  margin: 0 1%;
+  padding: 20px 0 30px 100px;
+}
+
+.experts div.expert-right {
+  top: 100px;
+}
+
+.experts h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.experts h3 {
+  font-family: 'Muli', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.experts p {
+  padding-right: 10%;
+  font-family: 'Muli', sans-serif;
+  font-size: 18px;
+}
+
+.experts img {
+  position: absolute;
+  border: 5px solid #B7DBC8;
+  border-radius: 50%;
+  width: 40%;
+  top: 20%;
+  left: -20%;
+}
+
+/* 5. SECTION CONTACT */
+
+.contact {
+  width: 70%;
+  margin: 0 auto 100px;
+  max-width: 1024px;
+}
+
+.contact h1 {
+  margin-top: 24px;
+  margin-bottom: 60px;
+  font-family: 'Playfair Display', serif;
+  font-size: 65px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.contact form, .contact div.contact-image {
+  float: left;
+  width: 44%;
+}
+
+.contact form {
+  margin: 0 5% 0 1%;
+}
+
+.contact input, .contact textarea, .contact button {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  padding: 5px;
+  font-family: 'Muli', sans-serif;
+}
+
+.contact input:focus, .contact textarea:focus {
+  outline: none;
+  background-color: #ACCEB7;
+}
+
+.contact label {
+  display: inline-block;
+  font-family: 'Muli', sans-serif;
+  margin-bottom: 5px;
+}
+
+.contact textarea {
+  height: 100px;
+}
+
+.contact button {
+  padding: 0;
+  border: none;
+  margin: 50px 0 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: #ACCEB7;
+  color: white;
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+
+.contact img {
+  width: 100%;
+}
+
+.contact div.contact-image {
+  position: relative;
+  height: 400px;
+  margin: 0 1% 0 5%;
+  border: 5px solid #B7DBC8;
+}
+
+.contact div.contact-image::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6%;
+  left: 6%;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/img-bottom@2x.jpg');
+  background-size: cover;
+  z-index: -1;
+}
+
+/* 6. FOOTER */
+
+footer {
+  height: 100px;
+  background-color: #ACCEB7;
+}
+
+footer div.wrap {
+  width: 70%;
+  margin: 0 auto;
+}
+
+footer div.annotation {
+  padding: 25px 0;
+  float: left;
+}
+
+footer p {
+  font-family: 'Muli', sans-serif;
+  color: #fff;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+footer div.socials {
+  float: right;
+}
+
+footer div.social {
+  float: left;
+  width: 85px;
+  height: 85px;
+  padding: 10px;
+  margin: 7px;
+}
