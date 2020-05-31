@@ -47,14 +47,14 @@ div.buttons button:hover {
 div.buttons::after {
   background-color: #ACCEB7;
   position: absolute;
-  bottom:0;
+  bottom: 0;
   left: 0;
   display: block;
-  width: 100%; 
+  width: 100%;
   height: 100%;
   content: "";
-  transition: .8s; 
-  z-index: -1; 
+  transition: .8s;
+  z-index: -1;
 }
 
 div.buttons:hover::after {
@@ -107,7 +107,7 @@ header {
 header .header-image {
   position: relative;
   float: left;
-  width: 48%;  
+  width: 48%;
   height: 700px;
   border: 5px solid #B7DBC8;
   margin: 0 2% 0 0;
@@ -145,7 +145,7 @@ header .about {
   float: left;
   height: 700px;
   padding-top: 168px;
-  width: 48%;  
+  width: 48%;
   margin-left: 2%;
 }
 
@@ -156,11 +156,14 @@ header .logo {
 
 header .slogan {
   position: absolute;
-  left: 50px;
+  width: 90%;
+  left: 44%;
   bottom: 0;
+  transform: translateX(-50%);
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 header p {
@@ -209,7 +212,8 @@ header p {
   font-weight: normal;
 }
 
-.experts div.expert-left, .experts div.expert-right {
+.experts div.expert-left,
+.experts div.expert-right {
   position: relative;
   float: left;
   min-height: 240px;
@@ -248,8 +252,9 @@ header p {
   border: 5px solid #B7DBC8;
   border-radius: 50%;
   width: 40%;
-  top: 20%;
+  top: 50%;
   left: -20%;
+  transform: translateY(-50%);
 }
 
 /* 5. SECTION CONTACT */
@@ -269,7 +274,8 @@ header p {
   font-weight: 400;
 }
 
-.contact form, .contact div.contact-image {
+.contact form,
+.contact div.contact-image {
   float: left;
   width: 44%;
 }
@@ -278,7 +284,8 @@ header p {
   margin: 0 5% 0 1%;
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
   width: 100%;
   margin-bottom: 20px;
   border: 2px solid black;
@@ -286,7 +293,8 @@ header p {
   font-family: 'Muli', sans-serif;
 }
 
-.contact input:focus, .contact textarea:focus {
+.contact input:focus,
+.contact textarea:focus {
   outline: none;
   background-color: #ACCEB7;
 }
